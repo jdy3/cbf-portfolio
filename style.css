@@ -1,0 +1,15 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 60%;
+  height: auto;
+}
+
+@media only screen and (min-width: 413px) {
+}
