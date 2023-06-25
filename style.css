@@ -6,9 +6,87 @@
   box-sizing: border-box;
 }
 
-img {
-  width: 60%;
+header {
+  overflow: hidden;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+#burger_bar {
+  padding-left: 1rem;
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.burger_line {
+  background-color: black;
+  border: solid;
+  border-radius: 10%;
+  height: 0.75rem;
+}
+
+main {
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+}
+
+#about_me {
+  text-align: center;
+}
+
+.main_image {
+  display: block;
+  margin: auto;
+  width: 60vw;
   height: auto;
+}
+
+#timeline {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 4fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  gap: 2rem;
+  border: solid;
+}
+
+.timeline_node {
+  border: solid;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+
+.timeline_dash {
+  border: solid;
+  height: 0.1rem;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+}
+
+footer {
+  background-color: red;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  border: solid;
+}
+
+.icon {
+  width: 10rem;
+  height: auto;
+  border: solid;
 }
 
 @media only screen and (min-width: 413px) {
