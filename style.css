@@ -15,6 +15,7 @@ header {
 }
 
 #burger_bar {
+  background-color: green;
   padding-left: 1rem;
   height: 10rem;
   width: 10rem;
@@ -28,6 +29,37 @@ header {
   border: solid;
   border-radius: 10%;
   height: 0.75rem;
+}
+
+#burger_cross {
+  height: 10rem;
+  width: 10rem;
+  background-color: pink;
+  display: none;
+}
+
+.cross_line1 {
+  height: 0.75rem;
+  background-color: goldenrod;
+  top: 5rem;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.cross_line2 {
+  height: 0.75rem;
+  background-color: goldenrod;
+  top: 4.1rem;
+  position: relative;
+  transform: rotate(-45deg);
+}
+
+#burger_bar:hover {
+  display: none;
+}
+
+#burger_bar:hover ~ #burger_cross {
+  display: block;
 }
 
 main {
