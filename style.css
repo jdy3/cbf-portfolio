@@ -12,15 +12,66 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
-  height: 10rem;
 }
 
 #burger_bar {
   display: none;
 }
 
-#burger_bar:checked ~ .burger {
+#burger {
+  background-color: green;
+  padding-left: 1rem;
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.burger_line {
+  background-color: black;
+  border: solid;
+  border-radius: 10%;
+  height: 0.75rem;
+}
+
+#menu {
+  height: 10rem;
+  width: 10rem;
+  background-color: pink;
   display: none;
+}
+
+.cross_line1 {
+  height: 0.75rem;
+  background-color: goldenrod;
+  top: 5rem;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.cross_line2 {
+  height: 0.75rem;
+  background-color: goldenrod;
+  top: 4.1rem;
+  position: relative;
+  transform: rotate(-45deg);
+}
+
+ul {
+  display: none;
+}
+
+#burger_bar:checked + #burger {
+  display: none;
+}
+
+#burger_bar:checked ~ #menu {
+  display: block;
+}
+
+#burger_bar:checked ~ ul {
+  display: block;
 }
 
 main {
@@ -69,7 +120,6 @@ footer {
   background-color: red;
   position: fixed;
   width: 100vw;
-  height: 10rem;
   bottom: 0;
   display: grid;
   grid-template-columns: auto auto auto;
