@@ -2,28 +2,80 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="device=device-width" , initial-scale="1.0" />
+    <meta name="viewport" content="device=device-width, initial-scale=1.0" />
     <title>Judith's cbf portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Judith</h1>
-    <section>
-      Hello, I'm a full-stack developer with a particular interest in Data
-      Science!
-    </section>
-    <img
-      src="https://images.pexels.com/photos/12659817/pexels-photo-12659817.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-      alt="Picture of a person holding a chick"
-    />
-    <section>
-      <div>Timeline</div>
-    </section>
-    <ul>
-      <li>Energy Watch</li>
-      <li>Image Carousel</li>
-      <li>Animation</li>
-    </ul>
-    <p>Deployment test</p>
+    <header>
+      <label for="burger_bar">
+        <input type="checkbox" id="burger_bar" />
+        <div id="burger">
+          <div class="burger_line"></div>
+          <div class="burger_line"></div>
+          <div class="burger_line"></div>
+        </div>
+        <div id="menu">
+          <div class="cross_line1"></div>
+          <div class="cross_line2"></div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#about_me">About Me</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+      </label>
+    </header>
+    <main>
+      <section id="about_me">
+        <h1>Judith</h1>
+        <p>
+          Hello, I'm a full-stack developer with a special interest in Data
+          Science!
+        </p>
+        <img
+          class="main_image"
+          src="https://images.pexels.com/photos/12659817/pexels-photo-12659817.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+          alt="Picture of a person holding a chick"
+        />
+      </section>
+      <section id="timeline">
+        <div class="timeline_node"></div>
+        <p>2013 - Interest in data analytics software sparked</p>
+        <div class="timeline_dash"></div>
+        <div></div>
+        <div class="timeline_node"></div>
+        <p>2016 - Attended first coding meetup.</p>
+        <div class="timeline_dash"></div>
+        <div></div>
+        <div class="timeline_node"></div>
+        <p>2020 - Completed a coding bootcamp</p>
+        <div class="timeline_dash"></div>
+        <div></div>
+        <div class="timeline_node"></div>
+        <p>2023 - Refreshed skills on Intro to Web-Dev Course</p>
+        <div class="timeline_dash"></div>
+        <div></div>
+        <div class="timeline_node"></div>
+        <p>2024 - Start first Junior Developer role!</p>
+      </section>
+      <section id="projects">
+        <div class="project_tile">Final Group Project</div>
+        <div class="project_tile">Personal Project</div>
+      </section>
+    </main>
+    <footer>
+      <a href="https://github.com/jdy3" target="_blank">
+        <img class="icon" src="/github-mark.png" />
+      </a>
+      <a href="https://www.freecodecamp.org/fcc7cad3c4b" target="_blank">
+        <img class="icon" src="/icons8-free-code-camp-48.png" />
+      </a>
+      <a href="https://www.codewars.com/users/jdy3" target="_blank">
+        <img class="icon" src="logo (1).png" />
+      </a>
+    </footer>
   </body>
 </html>

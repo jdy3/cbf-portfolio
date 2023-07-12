@@ -6,9 +6,143 @@
   box-sizing: border-box;
 }
 
-img {
-  width: 60%;
+header {
+  overflow: hidden;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+#burger_bar {
+  display: none;
+}
+
+#burger {
+  background-color: green;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.burger_line {
+  background-color: black;
+  border: solid;
+  border-radius: 10%;
+  height: 0.5rem;
+}
+
+#menu {
+  height: 5rem;
+  width: 5rem;
+  background-color: pink;
+  display: none;
+}
+
+.cross_line1 {
+  height: 0.5rem;
+  background-color: goldenrod;
+  top: 2.4rem;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.cross_line2 {
+  height: 0.5rem;
+  background-color: goldenrod;
+  top: 1.75rem;
+  position: relative;
+  transform: rotate(-45deg);
+}
+
+nav {
+  display: none;
+}
+
+#burger_bar:checked + #burger {
+  display: none;
+}
+
+#burger_bar:checked ~ #menu {
+  display: block;
+}
+
+#burger_bar:checked ~ nav {
+  display: block;
+}
+
+main {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+#about_me {
+  text-align: center;
+}
+
+.main_image {
+  display: block;
+  margin: auto;
+  width: 60vw;
   height: auto;
+}
+
+#timeline {
+  display: grid;
+  grid-template-columns: 0.5fr 5fr;
+  grid-template-rows: repeat(9, auto);
+  border: solid;
+  justify-items: center;
+}
+
+.timeline_node {
+  background-color: red;
+  border: solid;
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.timeline_dash {
+  background-color: red;
+  border: solid;
+  height: 3rem;
+}
+
+p {
+  justify-self: start;
+  align-self: center;
+}
+
+#projects {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project_tile {
+  width: 8rem;
+  height: 8rem;
+  border: solid red;
+}
+
+footer {
+  background-color: red;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  border: solid;
+}
+
+.icon {
+  width: 5rem;
+  height: auto;
+  border: solid;
 }
 
 @media only screen and (min-width: 413px) {
