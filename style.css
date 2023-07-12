@@ -60,10 +60,6 @@ header {
 }
 
 nav {
-  width: 100vw;
-  margin-bottom: 20rem;
-  text-align: center;
-  padding-top: 10rem;
   display: none;
 }
 
