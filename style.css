@@ -46,7 +46,7 @@ header {
 .cross_line1 {
   height: 0.5rem;
   background-color: goldenrod;
-  top: 2rem;
+  top: 2.4rem;
   position: relative;
   transform: rotate(45deg);
 }
@@ -54,7 +54,7 @@ header {
 .cross_line2 {
   height: 0.5rem;
   background-color: goldenrod;
-  top: 1.4rem;
+  top: 1.75rem;
   position: relative;
   transform: rotate(-45deg);
 }
@@ -112,9 +112,14 @@ main {
 }
 
 #projects {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
   justify-content: space-evenly;
+}
+
+.project_tile {
+  width: 8rem;
+  height: 8rem;
+  background-color: red;
 }
 
 footer {
@@ -122,8 +127,7 @@ footer {
   position: fixed;
   width: 100vw;
   bottom: 0;
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
   justify-content: space-evenly;
   border: solid;
 }
