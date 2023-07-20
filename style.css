@@ -108,28 +108,30 @@ h1 {
   display: grid;
   grid-template-columns: 0.5fr 5fr;
   grid-template-rows: repeat(9, auto);
-  border: solid;
   justify-items: center;
   padding-top: 2rem;
+  padding-left: 1rem;
 }
 
 .timeline_node {
-  background-color: red;
   border: solid;
+  border-width: 0.15rem;
   border-radius: 50%;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.4rem;
+  width: 1.4rem;
 }
 
 .timeline_dash {
-  background-color: red;
+  background-color: black;
   border: solid;
+  border-width: 0.12rem;
   height: 3rem;
 }
 
 p {
   justify-self: start;
   align-self: center;
+  padding-left: 0.5rem;
 }
 
 #projects {
