@@ -12,7 +12,7 @@ body {
 
 header {
   overflow: hidden;
-  background-color: red;
+  background-color: rgba(201, 189, 195, 0.98);
   position: fixed;
   top: 0;
   width: 100vw;
@@ -23,7 +23,7 @@ header {
 }
 
 #burger {
-  background-color: green;
+  background-color: rgba(201, 189, 195, 0.8);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   height: 5rem;
@@ -43,13 +43,13 @@ header {
 #menu {
   height: 5rem;
   width: 5rem;
-  background-color: pink;
+  background-color: rgba(201, 189, 195, 0.8);
   display: none;
 }
 
 .cross_line1 {
   height: 0.5rem;
-  background-color: goldenrod;
+  background-color: rgba(52, 248, 230, 1);
   top: 2.4rem;
   position: relative;
   transform: rotate(45deg);
@@ -57,7 +57,7 @@ header {
 
 .cross_line2 {
   height: 0.5rem;
-  background-color: goldenrod;
+  background-color: rgba(52, 248, 230, 1);
   top: 1.75rem;
   position: relative;
   transform: rotate(-45deg);
@@ -81,6 +81,11 @@ nav {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgba(52, 248, 230, 1);
 }
 
 main {
@@ -113,7 +118,12 @@ h1 {
   padding-left: 1rem;
 }
 
+#timeline:hover .timeline_node {
+  background-color: rgba(52, 248, 230, 1);
+}
+
 .timeline_node {
+  background-color: rgba(201, 189, 195, 0.5);
   border: solid;
   border-width: 0.15rem;
   border-radius: 50%;
@@ -144,24 +154,31 @@ p {
 .project_tile {
   width: 8rem;
   height: 8rem;
-  border: solid red;
+  border: solid rgba(201, 189, 195, 1);
   text-align: center;
+  background-color: rgba(201, 189, 195, 0.3);
+}
+
+.project_tile:hover {
+  border: solid rgba(52, 248, 230, 1);
 }
 
 footer {
-  background-color: red;
+  background-color: rgba(201, 189, 195, 0.98);
   position: fixed;
   width: 100vw;
   bottom: 0;
   display: flex;
   justify-content: space-evenly;
-  border: solid;
 }
 
 .icon {
   width: 5rem;
   height: auto;
-  border: solid;
+}
+
+.icon:hover {
+  border: solid rgba(52, 248, 230, 1);
 }
 
 @media only screen and (min-width: 413px) {
