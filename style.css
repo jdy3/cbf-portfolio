@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
 header {
   overflow: hidden;
   background-color: red;
@@ -75,9 +79,17 @@ nav {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
 main {
   margin-top: 5rem;
   margin-bottom: 10rem;
+}
+
+h1 {
+  padding: 1rem;
 }
 
 #about_me {
@@ -89,6 +101,7 @@ main {
   margin: auto;
   width: 60vw;
   height: auto;
+  padding: 1rem;
 }
 
 #timeline {
@@ -97,6 +110,7 @@ main {
   grid-template-rows: repeat(9, auto);
   border: solid;
   justify-items: center;
+  padding-top: 2rem;
 }
 
 .timeline_node {
@@ -121,12 +135,15 @@ p {
 #projects {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 3rem;
+  margin-bottom: -3rem;
 }
 
 .project_tile {
   width: 8rem;
   height: 8rem;
   border: solid red;
+  text-align: center;
 }
 
 footer {
