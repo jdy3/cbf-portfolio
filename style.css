@@ -95,6 +95,7 @@ main {
 
 h1 {
   padding: 1rem;
+  scroll-margin-top: 10rem;
 }
 
 #about_me {
