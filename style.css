@@ -6,9 +6,13 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
 header {
   overflow: hidden;
-  background-color: red;
+  background-color: rgba(201, 189, 195, 0.98);
   position: fixed;
   top: 0;
   width: 100vw;
@@ -19,7 +23,7 @@ header {
 }
 
 #burger {
-  background-color: green;
+  background-color: rgba(201, 189, 195, 0.8);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   height: 5rem;
@@ -39,13 +43,13 @@ header {
 #menu {
   height: 5rem;
   width: 5rem;
-  background-color: pink;
+  background-color: rgba(201, 189, 195, 0.8);
   display: none;
 }
 
 .cross_line1 {
   height: 0.5rem;
-  background-color: goldenrod;
+  background-color: rgba(52, 248, 230, 1);
   top: 2.4rem;
   position: relative;
   transform: rotate(45deg);
@@ -53,7 +57,7 @@ header {
 
 .cross_line2 {
   height: 0.5rem;
-  background-color: goldenrod;
+  background-color: rgba(52, 248, 230, 1);
   top: 1.75rem;
   position: relative;
   transform: rotate(-45deg);
@@ -75,9 +79,23 @@ nav {
   display: block;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgba(52, 248, 230, 1);
+}
+
 main {
   margin-top: 5rem;
   margin-bottom: 10rem;
+}
+
+h1 {
+  padding: 1rem;
+  scroll-margin-top: 10rem;
 }
 
 #about_me {
@@ -89,60 +107,79 @@ main {
   margin: auto;
   width: 60vw;
   height: auto;
+  padding: 1rem;
 }
 
 #timeline {
   display: grid;
   grid-template-columns: 0.5fr 5fr;
   grid-template-rows: repeat(9, auto);
-  border: solid;
   justify-items: center;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+#timeline:hover .timeline_node {
+  background-color: rgba(52, 248, 230, 1);
 }
 
 .timeline_node {
-  background-color: red;
+  background-color: rgba(201, 189, 195, 0.5);
   border: solid;
+  border-width: 0.15rem;
   border-radius: 50%;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.4rem;
+  width: 1.4rem;
 }
 
 .timeline_dash {
-  background-color: red;
+  background-color: black;
   border: solid;
+  border-width: 0.12rem;
   height: 3rem;
 }
 
 p {
   justify-self: start;
   align-self: center;
+  padding-left: 0.5rem;
 }
 
 #projects {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 3rem;
+  margin-bottom: -3rem;
 }
 
 .project_tile {
   width: 8rem;
   height: 8rem;
-  border: solid red;
+  border: solid rgba(201, 189, 195, 1);
+  text-align: center;
+  background-color: rgba(201, 189, 195, 0.3);
+}
+
+.project_tile:hover {
+  border: solid rgba(52, 248, 230, 1);
 }
 
 footer {
-  background-color: red;
+  background-color: rgba(201, 189, 195, 0.98);
   position: fixed;
   width: 100vw;
   bottom: 0;
   display: flex;
   justify-content: space-evenly;
-  border: solid;
 }
 
 .icon {
   width: 5rem;
   height: auto;
-  border: solid;
+}
+
+.icon:hover {
+  border: solid rgba(52, 248, 230, 1);
 }
 
 @media only screen and (min-width: 413px) {
