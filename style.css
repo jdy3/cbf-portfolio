@@ -183,4 +183,54 @@ footer {
 }
 
 @media only screen and (min-width: 413px) {
+  body {
+    font-size: 2rem;
+  }
+  #burger {
+    display: none;
+  }
+  nav {
+    display: block;
+    height: 5rem;
+    padding-right: 2rem;
+  }
+  li {
+    display: inline;
+    float: right;
+    vertical-align: text-bottom;
+    padding: 1rem;
+  }
+  h1 {
+    padding: 2rem;
+  }
+  .main_image {
+    padding-top: 2rem;
+    width: 40vw;
+  }
+
+  #timeline {
+    padding-top: 7rem;
+    padding-left: 35rem;
+    padding-bottom: 10rem;
+  }
+
+  .timeline_node {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-width: 0.2rem;
+  }
+  .timeline_dash {
+    height: 6rem;
+    border-width: 0.14rem;
+  }
+  #projects {
+    padding-top: 1rem;
+    margin-bottom: 6rem;
+  }
+
+  .project_tile {
+    width: 20rem;
+    height: 20rem;
+    border-width: 0.2rem;
+  }
 }
